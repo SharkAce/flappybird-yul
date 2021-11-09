@@ -1,0 +1,27 @@
+{
+  "name": "flappybird-yul",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SharkAce/flappybird-yul.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SharkAce/flappybird-yul/issues"
+  },
+  "homepage": "https://github.com/SharkAce/flappybird-yul#readme",
+  "dependencies": {
+    "p5": "^1.4.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.4.1",
+    "grunt-contrib-concat": "^2.0.0"
+  }
+}

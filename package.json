@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt default"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,9 @@
   },
   "devDependencies": {
     "grunt": "^1.4.1",
-    "grunt-contrib-concat": "^2.0.0"
+    "grunt-contrib-concat": "^2.0.0",
+    "grunt-eslint": "^24.0.0",
+    "prettier": "^2.4.1",
+    "prettier-eslint": "^13.0.0"
   }
 }

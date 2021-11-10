@@ -7,11 +7,13 @@ const wn = {
 
 
 let b
+let test
+
 function setup(){
     let canvas = createCanvas(wn.x,wn.y)
     canvas.parent('canvas');
     b = new Bird (100, 100);
-    let test = new Pipe(400,100);
+    test = new Pipe(400,150);
 
 }
 
@@ -23,6 +25,7 @@ function draw(){
     }
     b.update();
     b.render();
+    if (b.collision(test)){console.log("hit")}
 
     test.update();
     test.render();

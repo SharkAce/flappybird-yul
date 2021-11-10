@@ -38,6 +38,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-eslint');
   
     // Default task(s).
-    grunt.registerTask('default', [/*'eslint'*/, 'concat:build']);
+    grunt.registerTask('default', [/*'eslint',*/ 'concat:build']);
   
   };

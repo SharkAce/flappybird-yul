@@ -31,6 +31,9 @@ class Bird {
             this.timer = 0;
         }
     }
-
+    // collision(pipe){
+    //     let isColliding = false;
+    //     if ( && (this.y <= pipe.gapStart   ))
+    // }
 
 }

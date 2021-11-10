@@ -1,3 +1,4 @@
+//test bird
 class Bird {
     constructor (x, y) {
         this.timer = 40;

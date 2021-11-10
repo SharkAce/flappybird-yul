@@ -7,7 +7,7 @@ const wn = {
 let population = 1;
 let birds = [];
 let pipes = [] ;
-let pipenumber = 3 ;
+let pipenumber = 6 ;
 function setup(){
     let canvas = createCanvas(wn.x,wn.y)
     canvas.parent('canvas');
@@ -15,7 +15,8 @@ function setup(){
         birds.push(new Bird (100 , 100));
     }
     for (let i = 0 ; i < pipenumber ; i++){
-    pipes.push(new Pipe((i*550), 400,100))
+        let gapStart = randomInt(250,350)
+        pipes.push(new Pipe((i*300), gapStart,100))
     }
 
 }

@@ -32,6 +32,11 @@ class Bird {
             this.timer = 0;
         }
     }
+    closestPipePoint(x,y) {
+        
+
+        return pipePoint
+    }
     collision(pipe){
         let isColliding = false;
         if (
@@ -39,7 +44,14 @@ class Bird {
             ((this.y <= pipe.gapStart) || (this.y >= pipe.gapStart+pipe.gapSize))
         ){
             isColliding = true
-        }
+        
+         } 
+         //else {
+        //     let pipePoint = this.closestPipePoint(pipe.x, pipe.y);
+        //     if (Pipe.isInCircle(pipePoint.x, pipePoint.y, this.x, this.y)) {
+        //         isColliding = true;
+        //     }
+        // }
     return isColliding
     }
 

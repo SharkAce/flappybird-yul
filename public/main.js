@@ -1,7 +1,7 @@
-pipesWidth = 20
+let pipesWidth = 200
 
 const wn = {
-  x: innerWidth,
+  x: innerWidth + pipesWidth,
   y: innerHeight
 }
 let population = 1;
@@ -12,13 +12,7 @@ let pipeNumber = 5;
 function setup() {
   let canvas = createCanvas(wn.x, wn.y)
   canvas.parent('canvas');
-  for (let i = 0; i < population; i++) {
-    birds.push(new Bird(100, 100));
-  }
-  for (let i = 0; i < pipeNumber; i++) {
-    let gapStart = randomInt(250, 350)
-    pipes.push(new Pipe((i * 450), gapStart, 100))
-  }
+  reset()
 
 }
 
@@ -32,7 +26,7 @@ function reset() {
   }
   for (let i = 0; i < pipeNumber; i++) {
     let gapStart = randomInt(250, 350)
-    pipes.push(new Pipe((i * 450), gapStart, 100))
+    pipes.push(new Pipe((i * wn.x / pipeNumber), gapStart, 100))
   }
 }
 

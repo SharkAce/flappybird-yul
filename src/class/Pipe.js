@@ -1,6 +1,7 @@
 class Pipe {
   constructor(space, gapStart, gapSize) {
     this.x = wn.x + space;
+    this.space = space
     this.gapStart = gapStart;
     this.gapSize = gapSize;
     this.speed = 6;
@@ -13,7 +14,7 @@ class Pipe {
   update() {
     this.x -= this.speed;
     if (this.x < -this.pipeWidth) {
-      this.x = wn.x
+      this.x = wn.x - this.pipeWidth
     }
   }
   render() {

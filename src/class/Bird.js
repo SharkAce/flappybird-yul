@@ -7,10 +7,13 @@ class Bird {
         this.vx = 0 ;
         this.vy = 0 ;
         this.alive = true ;
+        this.jumped = false
+        this.color = [255, 255, 255]
 
     }
+    
     update () {
-        this.vy += 1
+        this.vy += 0.5
         this.x += this.vx
         this.y += this.vy
         if (this.y > wn.y){
@@ -20,10 +23,8 @@ class Bird {
 
     }
     render (){
-        if (this.alive){
-            ellipse (this.x, this.y, 40, 40);
-        }
-
+        fill.apply(1,this.color)
+        ellipse (this.x, this.y, 40, 40);
     }
     jump (){
         if (this.timer > 0){

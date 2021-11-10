@@ -15,7 +15,7 @@ function setup(){
         birds.push(new Bird (100 , 100));
     }
     for (let i = 0 ; i < pipenumber ; i++){
-    pipes.push(new Pipe((i*300), 400,100))
+    pipes.push(new Pipe((i*550), 400,100))
     }
 
 }

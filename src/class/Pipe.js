@@ -9,6 +9,9 @@ class Pipe{
     }
     update(){
         this.x-=this.speed;
+        if (this.x < - this.pipeWidth){
+            this.x = wn.x
+        }
     }
     render(){
         rect(this.x, 0, this.pipeWidth, this.gapStart);

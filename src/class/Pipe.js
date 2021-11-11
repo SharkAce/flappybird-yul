@@ -1,7 +1,6 @@
 class Pipe {
   constructor(space, gapStart, gapSize) {
     this.x = wn.x + space;
-    this.space = space
     this.gapStart = gapStart;
     this.gapSize = gapSize;
     this.speed = 6;
